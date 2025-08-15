@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/VALD.png" alt="VALD - Vuelta a los Durmientes" width="280" height="180">
+  <img src="images/VALD.png" alt="VALD - Vuelta a los Durmientes" width="280" height="auto">
   
   # VALD — Vuelta a los Durmientes 2025
   
