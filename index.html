@@ -212,7 +212,7 @@
 
 <main id="contenido" role="main">
   <!-- Breadcrumbs -->
-  <nav aria-label="Breadcrumb" class="breadcrumb-nav" style="background: rgba(26, 26, 26, 0.95); padding: 0.5rem 0; border-bottom: 1px solid rgba(255, 107, 53, 0.1);">
+  <nav aria-label="Breadcrumb" class="breadcrumb-nav" style="background: rgba(26, 26, 26, 0.95); padding: 0.5rem 0; border-bottom: 1px solid rgba(255, 107, 53, 0.1);display:none;">
     <div class="container">
       <ol style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; font-size: 0.9rem;">
         <li><a href="https://vald.izignamx.com" style="color: var(--vald-h1); text-decoration: none;">Inicio</a></li>
@@ -222,31 +222,27 @@
   
   <section id="hero" class="hero" role="banner">
     <div class="container hero-inner">
-      <img src="images/VALD.png" alt="Logo oficial VALD - Vuelta a los Durmientes 2025, carrera de ultraciclismo de 317 km" width="280" height="180" loading="eager" decoding="async">
-      <h1>Vuelta a los Durmientes</h1>
-      <p class="meta">317 km · 4800 m de ascenso · <strong>16 de agosto 2025 · 00:00 hrs</strong></p>
-      <p class="meta">Salida: Pirámide de San Gregorio · Meta: La Gallera 129, Santa Cruz Acalpixca, Xochimilco</p>
-      <p class="meta legend">Evento de ultraciclismo autosuficiente. Sin asistencia externa. Casco obligatorio.</p>
-      <!-- Countdown Timer -->
-      <div id="countdown-container" style="margin: 2rem 0; text-align: center;">
-        <div id="countdown-timer" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0;">
-          <div class="countdown-unit">
-            <div class="countdown-number" id="days">000</div>
-            <div class="countdown-label">Días</div>
+        <img src="images/VALD.png" alt="Logo oficial VALD - Vuelta a los Durmientes 2025, carrera de ultraciclismo de 317 km" width="280" height="180" loading="eager" decoding="async">
+        <h1>Vuelta a los Durmientes</h1>
+        <p class="meta">317 km · 4800 m de ascenso · <strong>16 de agosto 2025 · 00:00 hrs</strong></p>
+        <p class="meta">Salida: Pirámide de San Gregorio · Meta: La Gallera 129, Santa Cruz Acalpixca, Xochimilco</p>
+        <p class="meta legend">Evento de ultraciclismo autosuficiente. Sin asistencia externa. Casco obligatorio.</p>
+        <!-- Countdown Timer -->
+        <div id="countdown-container" style="margin: 2rem 0; text-align: center;">
+          <div id="countdown-timer" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0;">
+            <div class="countdown-unit">
+              <div class="countdown-number" id="hours">0</div>
+              <div class="countdown-label">Horas</div>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Minutos</div>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Segundos</div>
+            </div>
           </div>
-          <div class="countdown-unit">
-            <div class="countdown-number" id="hours">00</div>
-            <div class="countdown-label">Horas</div>
-          </div>
-          <div class="countdown-unit">
-            <div class="countdown-number" id="minutes">00</div>
-            <div class="countdown-label">Minutos</div>
-          </div>
-          <div class="countdown-unit">
-            <div class="countdown-number" id="seconds">00</div>
-            <div class="countdown-label">Segundos</div>
-          </div>
-        </div>
         <div id="countdown-message" style="display: none; font-size: 1.5rem; font-weight: 700; color: var(--vald-accent); text-align: center; margin: 2rem 0; animation: pulse 2s infinite;">
           ¡Es hora! 🚴‍♂️ ¡Que comience la aventura más épica!<br/>¡Fuerza y resistencia, valientes ciclistas! 🔥
         </div>
@@ -478,24 +474,32 @@ if ('IntersectionObserver' in window) {
  const RACE_START_DATE = new Date('2025-08-16T00:00:00-06:00'); // 16 agosto 2025, 00:00 GMT-6
  
  function updateCountdown() {
-   const now = new Date();
-   const timeLeft = RACE_START_DATE - now;
+    const now = new Date();
+    const timeLeft = RACE_START_DATE - now;
+    const raceEndTime = new Date(RACE_START_DATE.getTime() + (24 * 60 * 60 * 1000)); // 24 horas después
+    
+    if (now >= raceEndTime) {
+      // Race has ended (24 hours after start)
+      document.getElementById('countdown-timer').style.display = 'none';
+      const messageElement = document.getElementById('countdown-message');
+      messageElement.innerHTML = '¡Gracias a todos los valientes ciclistas! 🏆<br/>¡Felicidades por completar esta épica aventura! 🚴‍♂️✨<br/>¡Hasta la próxima VALD! 🔥';
+      messageElement.style.display = 'block';
+      return;
+    }
+    
+    if (timeLeft <= 0) {
+      // Race has started!
+      document.getElementById('countdown-timer').style.display = 'none';
+      document.getElementById('countdown-message').style.display = 'block';
+      startCelebration();
+      return;
+    }
    
-   if (timeLeft <= 0) {
-     // Race has started!
-     document.getElementById('countdown-timer').style.display = 'none';
-     document.getElementById('countdown-message').style.display = 'block';
-     startCelebration();
-     return;
-   }
-   
-   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-   const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
    
-   document.getElementById('days').textContent = days.toString().padStart(3, '0');
-   document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+   document.getElementById('hours').textContent = totalHours.toString();
    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
  }
