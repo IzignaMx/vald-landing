@@ -1,117 +1,99 @@
-1	Axel Armando Del Arco	Varonil
-2	Alan Zepeda Casas 	Varonil
-3	Diego Alejandro Prado Alonso	Varonil
-4	Manuel Ruiz Rodriguez 	Varonil
-5	Gerardo Treviño	Varonil
-6	Juan Pablo Fránquiz García	Varonil
-7	Daniel Pineda	Varonil 
-8	Vogar nazaret Hernández Figueroa 	Varonil 
-9	Victor flores hernandez 	Varonil 
-10	Axel Vergara 	Varonil 
-11	Alfreiro Álvarez 	Varonil 
-12	José Pablo Sánchez Orato	Varonil 
-13	Kevin Demetrio 	Varonil 
-14	Tyreck Velázquez Jiménez	Varonil 
-15	Leonardo Tonatiuh Llamas Morales	Varonil 
-16	Gustavo López Sánchez 	Varonil 
-17	Alan Valencia Galván 	Varonil 
-18	Alberto Tonatiuh Ramírez Vázquez	Varonil 
-19	Diego Villarias 	Varonil 
-20	José Emmanuel Guzman Sanchez	Varonil 
-21	Erik Santini 	Varonil 
-22	Jorge dario Muciño García	Varonil 
-23	Alberto Ruiz Corral	Varonil 
-24	Maurice Orlando Cortes Sedeño	Varonil 
-25	Edgar Zorilla 	Varonil 
-26	Ale Liz 	Femenil 
-27	Ayla Valverde 	Femenil 
-28	Alhan Michel Gutierrez Gonzalez	Varonil 
-29	Marco Antonio Hernández Carnalla	Varonil 
-30	Bradley Michael Sutton	Varonil 
-31	Cristian Esteban Téllez González	Varonil 
-32	Andrés Niño Alquicira	Varonil 
-33	Moises Martinez Luna hellmoy	Varonil 
-34	Noe Juan  Delgadillo  Hernández 	Varonil 
-35	Alejandro Santos Velazco 	Varonil 
-36	Pablo Ramírez Andrés	Varonil 
-37	Jonathan Pérez Hernández	Varonil 
-38	Cesar  Ferrer  Alegría 	Varonil 
-39	Emanuel Martínez Montaño 	Varonil 
-40	Zuiri Sánchez Yam	Femenil 
-41	Jaime Héctor castillo Montañez 	Varonil 
-42	Jesús Antonio Gallegos Adame	Varonil 
-43	Arturo P Pérez Gonzále 	Varonil 
-44	Jacobo Israel Rodriguez Arredondo	Varonil 
-45	Paulo Benito Alcocer Miller	Varonil 
-46	Osvaldo Serrano Camargo	Varonil 
-47	Alan Rodolfo Sánchez Servin 	Varonil 
-48	José Luis Yedra Padilla	Varonil 
-49	Jesús Armando Pineda Morales	Varonil 
-50	Ricardo Rivera Rodríguez (Rintek) 	Varonil 
-51	Karina Rivera Rodríguez (Nina) 	Femenil
-52	Sergio Jaramillo 	Varonil 
-53	Edwin Roberto Martinez Morales 	Varonil 
-54	Leonardo Diaz Hernández 	Varonil 
-55	“Ras” Tayén Iturria Sanchez 	Varonil 
-56	Elias mavric lobos biker	Varonil 
-57	Alexander Krieger Garduño	Varonil 
-58	Ireneo Posada Velazquez	Varonil 
-59	Ernesto Velasquez Maya	Varonil 
-60	Emiliano Garcia Luna 	Varonil 
-61	Juan Carlos Vicente Hernández	Varonil 
-62	Royal 	Varonil 
-63	Carolina del Carmen Leiva 	Femenil 
-64	Abraham Ale Sleman Reynoso	Varonil 
-65	Marco Hernan Castro Rodríguez	Varonil 
-66	Alberto González  Gomez 	Varonil 
-67	Salvador Jezrrel Guerrero Salinas	Varonil 
-68	Luis Alberto Ramirez Diaz	Varonil 
-69	Misael Rios Jiménez 	Varonil 
-70	José Miguel Martínez Domínguez	Varonil 
-71	Raul Teran Carrion	Varonil 
-72	Edgar Gerardo Castillo Hernández (Gared)	Varonil 
-73	Gabriel Guerra Malacara	Varonil 
-74	Eduardo esteban Cuarenta corona	Varonil 
-75	Oscar Isaac Montes de Oca Nah	Varonil 
-76	Francisco Javier Vargas Martínez	Varonil 
-77	Al Rey Bolaño	Varonil 
-78	Rafael Adrian Martinez Cruz	Varonil 
-79	Isaac Cherem Zapan	Varonil 
-80	Eduardo Elizalde	Varonil 
-81	Daniel Salas Pérez	Varonil 
-82	Sebastián Miranda 	Varonil 
-83	Nicolas Alejandro Douek	Varonil 
-84	Lucy Castillejos 	Femenil 
-85	Alejandro Javier Garduño Gutiérrez	Varonil 
-86	Diego López 	Varonil 
-87	Eduardo Juarez cano	Varonil 
-88	Alvaro Ortega (Acobike)	Varonil 
-89	Mariana Devesa Ramírez	Femenil 
-90	Konstantin Pavliuchenko 	Varonil 
-91	Ana Sofía Zarate Vera 	Femenil 
-92	Emiliano Barbosa Gonzalez 	Varonil 
-93	Abner Saul Orta Gregorio	Varonil 
-94	Neftalí Donato	Varonil 
-95	Antonio Honorato Herrera	Varonil 
-96	Fuco Jiménez Picazo 	Varonil 
-97	Sebastián Ospina Valencia 	Varonil 
-98	Carlos Gerardo Martínez Bravo	Varonil 
-99	María Fernanda Pacheco Gutierrez	Femenil 
-100	Victor Manuel Léon Montes de Oca	Varonil 
-101	Roberto Vazquez Gamboa	Varonil 
-102	Panda 	Varonil 
-103	Jorge Sanchez Pérez	Varonil 
-104	Mauricio Granados	Varonil 
-105	Rabbi Abba flores	Varonil 
-106	Álvaro García Córdova 	Varonil 
-107	Maritza Siomara Gama Torres	Femenil 
-108	Mauricio Lara Centeno 	Varonil 
-109	Argelia Pineda Cruz	Femenil 
-110	Joaquín Hernández Cruz	Varonil 
-111	José Carlos Martínez Álvarez 	Varonil 
-112	Alberto José	Varonil 
-113	Saturnino Ruano Alejandro 	Varonil 
-114	Luis Alberto Taquex Castillo 	Varonil 
-115	Gerardo Vaca Bucio	Varonil 
-116	Sergio Ulises Guadarrama Guadarrama	Varonil 
-117	Bruno Valasse Levais	Varonil
+1	Neftalí Donato	11:51	Varonil
+2	Jaime Héctor castillo Montañez	11:51	Varonil
+3	Sebastián Miranda	11:51	Varonil
+4	Osvaldo Serrano Camargo	13:06	Varonil
+5	Alexander Krieger Garduño	13:20	Varonil
+6	Nicolas Alejandro Douek	13:40	Varonil
+7	Juan Pablo Fránquiz García	14:03	Varonil
+8	Royal	14:08	Varonil
+9	Ireneo Posada Velazquez	14:14	Varonil
+10	Elias mavric lobos biker	14:21	Varonil
+11	Álvaro García Córdova	14:33	Varonil
+12	Jorge Alberto Soriano Diaz	14:37	Varonil
+13	Ana Sofía Zarate Vera	15:00	Femenil
+14	Emiliano Barbosa Gonzalez	15:15	Varonil
+15	Gerardo Treviño	15:23	Varonil
+16	Saturnino Ruano Alejandro	15:35	Varonil
+17	Luis Alberto Taquex Castillo	15:39	Varonil
+18	Bradley Michael Sutton	15:54	Varonil
+19	Alan Zepeda Casas	16:07	Varonil
+20	Erik Santini	16:10	Varonil
+21	Axel Vergara	16:45	Varonil
+22	"Ras" Tayén Iturria Sanchez	16:47	Varonil
+23	Kevin Demetrio	16:47	Varonil
+24	Emanuel Martínez Montaño	16:51	Varonil
+25	Alberto Ruiz Corral	16:56	Varonil
+26	Rabbi Abba flores	16:56	Varonil
+27	Sebastián Ospina Valencia	16:57	Varonil
+28	Alejandro Javier Garduño Gutiérrez	17:02	Varonil
+29	Ernesto Velasquez Maya	17:04	Varonil
+30	María Fernanda Pacheco Gutierrez	17:12	Femenil
+31	José Emmanuel Guzman Sanchez	17:20	Varonil
+32	Carlos Gerardo Martínez Bravo	17:32	Varonil
+33	Marco Antonio Hernández Carnalla	17:37	Varonil
+34	Mariana Devesa Ramírez	17:55	Femenil
+35	Vogar nazaret Hernández Figueroa	18:00	Varonil
+36	Alberto José	18:02	Varonil
+37	Alan Rodolfo Sánchez Servin	18:06	Varonil
+38	Victor flores hernandez	18:30	Varonil
+39	Abner Saul Orta Gregorio	18:50	Varonil
+40	Maritza Siomara Gama Torres	18:52	Femenil
+41	Maurice Orlando Cortes Sedeño	19:03	Varonil
+42	Edgar Gerardo Castillo Hernández	19:38	Varonil
+43	Gerardo Vaca Bucio	19:41	Varonil
+44	Alfreiro Álvarez	19:53	Varonil
+45	Juan Carlos Vicente Hernández	20:02	Varonil
+46	Victor Manuel Léon Montes de Oca	20:02	Varonil
+47	Antonio Honorato Herrera	20:02	Varonil
+48	Alhan Michel Gutierrez Gonzalez	20:02	Varonil
+49	Raul Teran Carrion	20:23	Varonil
+50	Jesús Antonio Gallegos Adame	20:32	Varonil
+51	Carolina del Carmen Leiva	20:32	Femenil
+52	Isaac Cherem Zapan	21:34	Varonil
+53	Eduardo Juarez cano	21:37	Varonil
+54	Leonardo Tonatiuh Llamas Morales	21:39	Varonil
+55	Jacobo Israel Rodriguez Arredondo	21:47	Varonil
+56	Al Rey Bolaño	22:16	Varonil
+57	Bruno Valasse Levais	22:16	Varonil
+58	Rafael Adrian Martinez Cruz	22:16	Varonil
+DNF	Fuco Jiménez Picazo	13:54	Varonil
+DNF	Jorge dario Muciño García	14:04	Varonil
+DNF	José Emmanuel Guzman Sanchez	17:20	Varonil
+DNF	Leonardo Diaz Hernández	20:34	Varonil
+DNF	Axel Armando Del Arco	--------	Varonil
+DNF	Diego Alejandro Prado Alonso	--------	Varonil
+DNF	Manuel Ruiz Rodriguez	--------	Varonil
+DNF	Edgar Zorrilla	--------	Varonil
+DNF	Cristian Esteban Téllez González	--------	Varonil
+DNF	Andrés Niño Alquicira	--------	Varonil
+DNF	Moises Martinez Luna hellmoy	--------	Varonil
+DNF	Noe Juan Delgadillo Hernández	--------	Varonil
+DNF	Alejandro Santos Velazco	--------	Varonil
+DNF	Pablo Ramírez Andrés	--------	Varonil
+DNF	Zuiri Sánchez Yam	--------	Femenil
+DNF	Arturo P Pérez Gonzále	--------	Varonil
+DNF	Paulo Benito Alcocer Miller	--------	Varonil
+DNF	Jesús Armando Pineda Morales	--------	Varonil
+DNF	Ricardo Rivera Rodríguez (Rintek)	--------	Varonil
+DNF	Karina Rivera Rodríguez (Nina)	--------	Femenil
+DNF	Sergio Jaramillo	--------	Varonil
+DNF	Edwin Roberto Martinez Morales	--------	Varonil
+DNF	Marco Hernan Castro Rodríguez	--------	Varonil
+DNF	Alberto González Gomez	--------	Varonil
+DNF	Luis Alberto Ramirez Diaz	--------	Varonil
+DNF	Misael Rios Jiménez	--------	Varonil
+DNF	José Miguel Martínez Domínguez	--------	Varonil
+DNF	Gabriel Guerra Malacara	--------	Varonil
+DNF	Eduardo esteban Cuarenta corona	--------	Varonil
+DNF	Oscar Isaac Montes de Oca Nah	--------	Varonil
+DNF	Francisco Javier Vargas Martínez	--------	Varonil
+DNF	Daniel Salas Pérez	--------	Varonil
+DNF	Alvaro Ortega (Acobike)	--------	Varonil
+DNF	Konstantin Pavliuchenko	--------	Varonil
+DNF	Roberto Vazquez Gamboa	--------	Varonil
+DNF	Mauricio Granados	--------	Varonil
+DNF	Mauricio Lara Centeno	--------	Varonil
+DNF	Argelia Pineda Cruz	--------	Femenil
+DNF	Joaquín Hernández Cruz	--------	Varonil
+DNF	José Carlos Martínez Álvarez	--------	Varonil
+DNF	Sergio Ulises Guadarrama Guadarrama	--------	Varonil
