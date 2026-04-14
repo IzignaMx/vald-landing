@@ -1,5 +1,5 @@
 {
-  "name": "VALD — Vuelta a los Durmientes",
+  "name": "VALD 2026 — El Rey de la Montaña",
   "short_name": "VALD",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#fff8e6",
-  "background_color": "#fff8e6",
+  "theme_color": "#F5E6C8",
+  "background_color": "#F5E6C8",
   "display": "standalone"
 }

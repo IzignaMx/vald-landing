@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VALD 2025 — Vuelta a los Durmientes (Archivo)</title>
+  <meta name="description" content="VALD - Vuelta a los Durmientes 2025: carrera de ultraciclismo autosuficiente de 317 km y 4800 m de desnivel. Salida 16 agosto 00:00 hrs desde Pirámide de San Gregorio.">
+  <meta name="keywords" content="ultraciclismo, VALD, Vuelta a los Durmientes, ciclismo, carrera, México, 2025, autosuficiente, 317km, montaña">
+  <meta name="author" content="IzignaMx" />
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="es-MX">
+  <link rel="preload" as="image" href="/images/VALD.png">
+  <link rel="preload" as="image" href="/images/valley.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="prefetch" href="/data/sponsors.json">
+  <link rel="prefetch" href="/corredores.html">
+  <!-- Styles: local copy of 2025 CSS -->
+  <link rel="stylesheet" href="styles.min.css">
+  <meta property="og:title" content="VALD 2025 — Vuelta a los Durmientes (Archivo)">
+  <meta property="og:description" content="VALD 2025: La carrera de ultraciclismo más desafiante de México. 317 km, 4800 m de desnivel, formato autosuficiente.">
+  <meta property="og:image" content="https://vald.izignamx.com/images/promo.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VALD - Vuelta a los Durmientes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VALD 2025 — Vuelta a los Durmientes (Archivo)">
+  <meta name="twitter:description" content="Carrera de ultraciclismo autosuficiente: 317 km y 4800 m de desnivel. 16 de agosto 2025.">
+  <meta name="twitter:site" content="@el.rey.de.la.montana">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": "VALD — Vuelta a los Durmientes 2025",
+    "description": "Carrera de ultraciclismo autosuficiente de 317 km con 4800 m de desnivel acumulado. Evento sin asistencia externa, casco obligatorio.",
+    "startDate": "2025-08-16T00:00:00-06:00",
+    "endDate": "2025-08-17T00:00:00-06:00",
+    "eventStatus": "https://schema.org/EventMovedOnline",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "inLanguage": "es-MX",
+    "url": "https://vald.izignamx.com/ediciones/2025/",
+    "image": [
+      "https://vald.izignamx.com/images/VALD.png",
+      "https://vald.izignamx.com/images/ruta-completa.png",
+      "https://vald.izignamx.com/images/altimetria.png",
+      "https://vald.izignamx.com/images/promo.jpg"
+    ],
+    "location": {
+      "@type": "Place",
+      "name": "La Gallera",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "La Gallera 129",
+        "addressLocality": "Santa Cruz Acalpixca",
+        "addressRegion": "Xochimilco",
+        "addressCountry": "MX",
+        "postalCode": "16500"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.2553",
+        "longitude": "-99.1069"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "El Rey de la Montaña",
+      "url": "https://www.instagram.com/el.rey.de.la.montana",
+      "sameAs": "https://www.instagram.com/el.rey.de.la.montana"
+    },
+    "sport": "Cycling",
+    "category": "Ultraciclismo",
+    "maximumAttendeeCapacity": 150
+   }</script>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="VALD" />
+  <link rel="canonical" href="https://vald.izignamx.com/ediciones/2025/" />
+  <meta name="theme-color" content="#120B03" />
+  <meta property="og:locale" content="es_MX" />
+  <style>
+    /* Archive banner */
+    .archive-banner {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: linear-gradient(135deg, #D2491A 0%, #B83400 50%, #A02E00 100%);
+      color: #fff;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .archive-banner a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid rgba(255,215,0,0.4);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    .archive-banner a:hover {
+      background: rgba(255,215,0,0.15);
+      border-color: #FFD700;
+      transform: translateY(-1px);
+    }
+  </style>
+  <!-- Google tag (gtag.js) - Deferred for performance -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BSP53NSTVK');
+    
+    // Load Google Analytics after page load
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-BSP53NSTVK';
+      script.async = true;
+      document.head.appendChild(script);
+    });
+  </script>
+</head>
+<body>
+
+<!-- Archive banner — signals to visitors this is a past edition -->
+<div class="archive-banner" role="alert">
+  📁 Estás viendo el archivo de la edición <strong>VALD 2025</strong>
+  <a href="/">Ver edición actual →</a>
+  <a href="/ediciones/">Todas las ediciones</a>
+</div>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a href="#hero" aria-label="Ir al inicio de la página">
+      <img src="/images/VALD.png" alt="Logo VALD - Vuelta a los Durmientes, evento de ultraciclismo" width="auto" height="80" style="height:40px;width:auto;max-width:fit-content">
+    </a>
+    <nav role="navigation" aria-label="Navegación principal">
+      <a href="#ruta">Ruta</a>
+      <a href="#altimetria">Altimetría</a>
+      <a href="#gpx">Descarga GPX</a>
+      <a href="#patrocinadores">Patrocinadores</a>
+      <a href="/corredores.html">Resultados</a>
+      <a href="#faq">FAQ</a>
+      <a href="#reglamento">Reglamento</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Navigation -->
+<div class="nav-mobile" id="nav-mobile">
+  <div class="nav-mobile-content">
+    <a href="#ruta" onclick="closeMobileMenu()">Ruta</a>
+    <a href="#altimetria" onclick="closeMobileMenu()">Altimetría</a>
+    <a href="#gpx" onclick="closeMobileMenu()">Descarga GPX</a>
+    <a href="#patrocinadores" onclick="closeMobileMenu()">Patrocinadores</a>
+    <a href="/corredores.html" onclick="closeMobileMenu()">Resultados</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="#reglamento" onclick="closeMobileMenu()">Reglamento</a>
+    <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+  </div>
+</div>
+
+<main id="contenido" role="main">
+  <!-- Breadcrumbs -->
+  <nav aria-label="Breadcrumb" class="breadcrumb-nav" style="background: rgba(26, 26, 26, 0.95); padding: 0.5rem 0; border-bottom: 1px solid rgba(255, 107, 53, 0.1);display:none;">
+    <div class="container">
+      <ol style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; font-size: 0.9rem;">
+        <li><a href="https://vald.izignamx.com" style="color: var(--vald-h1); text-decoration: none;">Inicio</a></li>
+      </ol>
+    </div>
+  </nav>
+  
+  <section id="hero" class="hero" role="banner">
+    <div class="container hero-inner">
+        <img src="/images/VALD.png" alt="Logo oficial VALD - Vuelta a los Durmientes 2025, carrera de ultraciclismo de 317 km" width="280" height="180" loading="eager" decoding="async">
+        <h1>Vuelta a los Durmientes</h1>
+        <p class="meta">317 km · 4800 m de ascenso · <strong>16 de agosto 2025 · 00:00 hrs</strong></p>
+        <p class="meta">Salida: Pirámide de San Gregorio · Meta: La Gallera 129, Santa Cruz Acalpixca, Xochimilco</p>
+        <p class="meta legend">Evento de ultraciclismo autosuficiente. Sin asistencia externa. Casco obligatorio.</p>
+        <!-- Countdown Timer — frozen for archive -->
+        <div id="countdown-container" style="margin: 2rem 0; text-align: center;">
+          <div id="countdown-timer" style="display: none;"></div>
+        <div id="countdown-message" style="display: block; font-size: 1.5rem; font-weight: 700; color: var(--vald-accent); text-align: center; margin: 2rem 0;">
+          ¡Gracias a todos los valientes ciclistas! 🏆<br/>¡Felicidades por completar esta épica aventura! 🚴‍♂️✨<br/>¡Hasta la próxima VALD! 🔥
+        </div>
+      </div>
+      
+      <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-top:2rem">
+        <a class="button primary" href="/corredores.html">Resultados</a>
+        <a class="button secondary" href="/route/vald.gpx" download>📍 Descargar GPX</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" role="region" aria-labelledby="detalles-evento">
+    <div class="container">
+      <h2 id="detalles-evento" class="sr-only">Detalles del Evento</h2>
+      <div class="grid details">
+        <div class="card"><h3>Distancia</h3><p>317 km aprox.</p></div>
+        <div class="card"><h3>Desnivel acumulado</h3><p>≈ 4800 m</p></div>
+        <div class="card"><h3>Formato</h3><p>Ultraciclismo autosuficiente</p></div>
+        <div class="card"><h3>Fecha y hora</h3><p>16 de agosto 2025 · 00:00 hrs</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ruta" class="section" role="region" aria-labelledby="ruta-heading">
+    <div class="container">
+      <h2 id="ruta-heading">Ruta completa</h2>
+      <p class="legend">Recorrido circular alrededor de los Durmientes. Consulta el mapa esquemático.</p>
+      <img class="route-img" src="/images/ruta-completa.png" alt="Mapa detallado de la ruta completa: recorrido circular de 317 km alrededor de los Durmientes con puntos de control y poblaciones" loading="lazy" decoding="async" width="1200" height="800">
+    </div>
+  </section>
+
+  <section id="altimetria" class="section" role="region" aria-labelledby="altimetria-heading">
+    <div class="container">
+      <h2 id="altimetria-heading">Altimetría</h2>
+      <p class="legend">Perfil con puntos clave, checkpoints y ascensos principales.</p>
+      <img class="altimetry-img" src="/images/altimetria.png" alt="Perfil altimétrico completo: 317 km de distancia con 4800 metros de desnivel acumulado, mostrando ascensos principales y checkpoints" loading="lazy" decoding="async" width="1200" height="800">
+    </div>
+  </section>
+
+  <section id="gpx" class="section" role="region" aria-labelledby="gpx-heading">
+    <div class="container">
+      <h2 id="gpx-heading">Descarga GPX</h2>
+      <div class="card">
+        <p>Archivo de ruta actualizado. Compatible con ciclocomputadores y apps móviles.</p>
+        <a class="button primary" href="/route/vald.gpx" download>Descargar GPX</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="patrocinadores" class="section" role="region" aria-labelledby="patrocinadores-heading">
+    <div class="container">
+      <h2 id="patrocinadores-heading">Patrocinadores oficiales</h2>
+      <div class="sponsors" aria-live="polite"></div>
+      <p class="legend">Gracias a quienes hacen posible este esfuerzo. <a href="#contacto" style="color: var(--vald-accent); text-decoration: none; font-weight: 600;">Enlaza tu marca</a> para apoyar una logística responsable y cruelty‑free.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section faq">
+    <div class="container">
+      <h2>Preguntas frecuentes</h2>
+      <div class="grid" role="region" aria-label="Preguntas frecuentes sobre la carrera">
+        <details><summary role="button" aria-expanded="false">¿La carrera es con asistencia?</summary><p>No. Es autosuficiente. No está permitida la asistencia de vehículos o avituallamiento personal.</p></details>
+        <details><summary role="button" aria-expanded="false">¿Qué equipo es obligatorio?</summary><p>Casco, luces delantera y trasera con baterías suficientes, identificación y teléfono con batería.</p></details>
+        <details><summary>¿Cómo envío mi ubicación?</summary><p>Durante 8 horas en los horarios indicados (00:00, 08:00, 16:00) comparte ubicación en el grupo oficial de WhatsApp.</p></details>
+        <details><summary>¿Hay camping en meta?</summary><p>Sí, área de camping exclusiva para corredores en la meta (La Gallera 129).</p></details>
+        <details><summary>¿Se permite rodar en grupo?</summary><p>Sí, el apoyo mutuo entre participantes inscritos es válido.</p></details>
+        <details><summary>¿Qué pasa si abandono?</summary><p>Notifica en el grupo y, si es posible, regresa a meta para la convivencia y premiación.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="reglamento" class="section">
+    <div class="container">
+      <h2>Reglamento</h2>
+      <ul>
+<li>Queda prohibido agarrarse de cualquier vehículo motorizado.</li>
+<li>No se validarán ninguna ruta con fallas de trazabilidad por gps (líneas rectas, problemas con Strava) ni modificaciones alternas a la ruta original (específicamente brincarse pueblos)</li>
+<li>Tienes un tiempo máximo de 24 horas para realizar la ruta.</li>
+<li>En caso de no poder continuar con la ruta debes notificar que te retiras de la carrera en el grupo de WhatsApp y de igual manera te recomendamos regresar a meta para la convivencia y premiación. En caso de emergencia o de necesitar apoyo comunicarse directamente con los organizadores.</li>
+<li>Deberás mandar tu ubicación en tiempo real en WhatsApp durante 8 horas en los siguientes horarios:</li>
+<li>Los corredores deberán llegar a la META (La Gallera 129 Santa Cruz Acalpixca Xochimilco) a las 22:00 hrs del viernes 15 de Agosto para la entrega de Kits.</li>
+<li>La entrega de kits finaliza a las 23:15hrs para dirigirnos todos juntos a paso controlado a la línea de salida.</li>
+<li>En este punto es donde van a poder guardar sus autos, dejar mochilas con cambio de ropa o lo que ocupen resguardar para su regreso. (Toma en cuenta que en la meta contaremos con acceso a regaderas)</li>
+<li>En la meta habrá área de camping exclusivo para los corredores que lo necesiten.</li>
+<li>Queda prohibido el avituallamiento personal o la asistencia de algún vehículo de apoyo. La luz durante la noche tiene que ser tu responsabilidad, si te alumbra un vehículo de apoyo equivale a ser asistido y es motivo de descalificación.</li>
+<li>Tu estrategia dentro de la carrera es totalmente libre, siempre y cuando decidas trabajar en equipo con otros corredores inscritos, el apoyo mutuo entre competidores es completamente valido. (Alimentos, bebidas, fallas mecánicas, préstamo de accesorios)</li>
+<li>El uso del casco es OBLIGATORIO.</li>
+</ul>
+      <p class="legend">Dirección de meta y logística en el documento oficial.<br/>Respeta a los demás, al entorno y a los animales; el evento promueve prácticas responsables y sin crueldad, discriminación, violencia u opresión.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Para dudas y prensa: <a href="https://wa.me/524929003932">+52 492 900 3932</a> y <a href="https://wa.me/5215561913650">+52 1 55 6191 3650</a></p>
+      <img src="/rey-de-la-montana.svg" alt="Logotipo de El Rey de la Montaña" width="150" height="48" loading="lazy" decoding="async" class="rey">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-logos">
+      <small class="signature">Landing construida por <a href="https://izignamx.com" target="_blank"><strong>IzignaMx</strong></a></small>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile Menu Functionality
+const hamburger = document.getElementById('hamburger');
+const navMobile = document.getElementById('nav-mobile');
+
+function toggleMobileMenu() {
+  const isActive = hamburger.classList.contains('active');
+  
+  if (isActive) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+}
+
+function openMobileMenu() {
+  hamburger.classList.add('active');
+  navMobile.classList.add('active');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+  hamburger.classList.remove('active');
+  navMobile.classList.remove('active');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+// Event listeners
+hamburger.addEventListener('click', toggleMobileMenu);
+
+// Close menu when clicking outside
+navMobile.addEventListener('click', (e) => {
+  if (e.target === navMobile) {
+    closeMobileMenu();
+  }
+});
+
+// Close menu on escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && navMobile.classList.contains('active')) {
+    closeMobileMenu();
+  }
+});
+
+// Cargar sponsors de forma optimizada
+function loadSponsors() {
+  const wrap = document.querySelector('.sponsors');
+  if (!wrap) return;
+  
+  fetch('/data/sponsors.json')
+    .then(r => {
+      if (!r.ok) throw new Error('Network response was not ok');
+      return r.json();
+    })
+    .then(items => {
+      const fragment = document.createDocumentFragment();
+      
+      for (const s of items) {
+        const a = document.createElement('a');
+        a.href = s.url;
+        a.target = '_blank';
+        a.rel = 'noopener sponsored';
+        a.setAttribute('aria-label', `Visitar patrocinador ${s.name}`);
+        
+        if (s.logo && s.logo.trim() !== '') {
+          const img = document.createElement('img');
+          img.src = s.logo;
+          img.alt = `Logo de ${s.name}`;
+          img.loading = 'lazy';
+          img.decoding = 'async';
+          img.onerror = function() {
+            a.classList.add('sponsor-text');
+            a.textContent = s.name;
+            a.removeChild(img);
+          };
+          a.appendChild(img);
+        } else {
+          a.classList.add('sponsor-text');
+          a.textContent = s.name;
+        }
+        
+        if (s.cta) a.title = s.cta;
+        fragment.appendChild(a);
+      }
+      
+      wrap.appendChild(fragment);
+    })
+    .catch(error => {
+      console.warn('Failed to load sponsors:', error);
+      wrap.innerHTML = '<p style="text-align: center; color: var(--vald-body);">Patrocinadores no disponibles temporalmente</p>';
+    });
+}
+
+// Load sponsors when the section is about to be visible
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadSponsors();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '100px' });
+  
+  const sponsorsSection = document.querySelector('#patrocinadores');
+  if (sponsorsSection) observer.observe(sponsorsSection);
+} else {
+   // Fallback for older browsers
+   window.addEventListener('load', loadSponsors);
+ }
+</script>
+</body>
+</html>
