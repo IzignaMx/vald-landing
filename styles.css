@@ -504,7 +504,7 @@ a:hover { color: var(--fire-red); }
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-md);
 }
 
 .cta-button {
@@ -792,7 +792,7 @@ a:hover { color: var(--fire-red); }
 
 @media (min-width: 1024px) {
   .info-section {
-    padding: clamp(0rem, 0vh, 2rem) var(--space-2xl) clamp(6rem, 12vh, 10rem);
+    padding: clamp(0rem, 0vh, 2rem) var(--space-2xl) clamp(2rem, 3vh, 4rem);
   }
   .countdown-unit {
     min-width: 90px;
@@ -856,7 +856,7 @@ footer {
 .signature {
   font-size: 0.78rem;
   color: var(--text-body);
-  opacity: 0.7;
+  opacity: 1;
 }
 .signature a {
   color: var(--fire-orange);
@@ -924,4 +924,34 @@ footer {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+/* ==============================================
+  FIRE & SMOKE PARTICLES
+  ============================================== */
+
+.campfire-fx {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 30;
+}
+
+#fireSmokeCanvas,
+#fireEmberCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+}
+
+#fireSmokeCanvas {
+  filter: url(#heat-distortion);
+}
+
+.fx-defs {
+  position: absolute;
 }
