@@ -331,7 +331,7 @@ a:hover { color: var(--fire-red); }
   position: relative;
   z-index: 30;
   width: 100%;
-  padding: clamp(0rem, 0vh, 1rem) var(--space-lg) clamp(4rem, 10vh, 8rem);
+  padding: clamp(0rem, 0vh, 1rem) var(--space-lg) clamp(2rem, 5vh, 4rem);
   display: flex;
   justify-content: center;
   background: var(--parchment);
