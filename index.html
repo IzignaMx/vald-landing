@@ -13,14 +13,14 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="es-MX">
   <!-- Preload critical assets -->
-  <link rel="preload" as="image" href="/images/VALD.png">
+  <link rel="preload" as="image" href="/images/VALD_2026-logo.png">
   <link rel="preload" as="image" href="/vald.jpg">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css?v=20260413-coming-soon">
+  <link rel="stylesheet" href="/styles.css?v=20260416-flow">
   <!-- Open Graph -->
   <meta property="og:title" content="VALD 2026 — El Rey de la Montaña · Próximamente">
   <meta property="og:description" content="Carrera de ciclismo de montaña. 06 de Junio de 2026. Costo: $500. Categorías: Femenil / Varonil. Salida: 00:00 hrs.">
@@ -50,7 +50,7 @@
     "url": "https://vald.izignamx.com",
     "image": [
       "https://vald.izignamx.com/vald.jpg",
-      "https://vald.izignamx.com/images/VALD.png"
+      "https://vald.izignamx.com/images/VALD_2026-logo.png"
     ],
     "organizer": {
       "@type": "Organization",
@@ -104,19 +104,23 @@
       document.head.appendChild(s);
     });
   </script>
+  <!-- Anime.js v4 — Animation Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.3.6/dist/anime.min.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#countdown-section">Saltar al contenido</a>
 
-<main class="scene" role="main">
+<!-- ========================================
+     HERO SECTION — Full viewport visual
+     ======================================== -->
+<section class="hero-section" id="hero">
   <h1 class="sr-only">VALD 2026 — El Rey de la Montaña — Próximamente</h1>
 
+  <div class="hero-canvas" aria-hidden="true">
   <!-- Layer 0: Parchment background (CSS-driven) -->
-  <div class="layer layer-parchment" aria-hidden="true"></div>
+  <div class="layer layer-parchment"></div>
 
-  <!-- Layer 0.5: Poster fallback — shows vald.jpg as ambient art
-       This provides visual richness before individual PSD layers are extracted.
-       Remove or reduce opacity once all layer-*.png files are in place. -->
+  <!-- Layer 0.5: Poster fallback -->
   <div class="layer layer-poster-fallback" aria-hidden="true">
     <img src="/vald.jpg"
          alt=""
@@ -125,19 +129,42 @@
          width="1200" height="1600">
   </div>
 
-  <!-- Layer 1: Ornamental border swirls
-       NOTE: Replace src with PSD-extracted ornaments layer -->
-  <div class="layer layer-ornaments" aria-hidden="true" data-parallax-factor="0.02">
-    <img src="images/layer-ornaments.png"
+  <!-- Layer 1: Flame corners — 5 instances of the same flame ring -->
+  <div class="layer layer-ornaments" aria-hidden="true">
+    <img src="images/VALD_2026_02-fuego.png"
          alt=""
+         class="flame flame-tl"
          loading="eager"
          decoding="async"
-         width="1200" height="1600"
-         onerror="this.parentElement.style.display='none'">
+         width="1200" height="1600">
+    <img src="images/VALD_2026_02-fuego.png"
+         alt=""
+         class="flame flame-tr"
+         loading="eager"
+         decoding="async"
+         width="1200" height="1600">
+    <img src="images/VALD_2026_02-fuego.png"
+         alt=""
+         class="flame flame-bl"
+         loading="eager"
+         decoding="async"
+         width="1200" height="1600">
+    <img src="images/VALD_2026_02-fuego.png"
+         alt=""
+         class="flame flame-br"
+         loading="eager"
+         decoding="async"
+         width="1200" height="1600">
+    <img src="images/VALD_2026_02-fuego.png"
+         alt=""
+         class="flame flame-mr"
+         loading="eager"
+         decoding="async"
+         width="1200" height="1600">
   </div>
 
   <!-- Layer 2: Sun rays -->
-  <div class="layer layer-sunrays" aria-hidden="true" data-parallax-factor="0.03">
+  <div class="layer layer-sunrays" aria-hidden="true">
     <svg class="sunrays-svg" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <linearGradient id="ray-grad" x1="0" y1="0" x2="0" y2="1">
@@ -145,7 +172,6 @@
           <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <!-- 24 rays radiating from center -->
       <g opacity="0.35">
         <polygon points="300,300 280,0 320,0" fill="url(#ray-grad)"/>
         <polygon points="300,300 280,0 320,0" fill="url(#ray-grad)" transform="rotate(15 300 300)"/>
@@ -175,119 +201,61 @@
     </svg>
   </div>
 
-  <!-- Layer 3: Sun disc -->
-  <div class="layer layer-sun" aria-hidden="true" data-parallax-factor="0.04">
-    <svg class="sun-disc" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <defs>
-        <radialGradient id="sun-grad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#FFE44D"/>
-          <stop offset="60%" stop-color="#FFD700"/>
-          <stop offset="100%" stop-color="#EDAA25"/>
-        </radialGradient>
-      </defs>
-      <circle cx="100" cy="100" r="90" fill="url(#sun-grad)"/>
-      <circle cx="100" cy="100" r="90" fill="none" stroke="#E8A020" stroke-width="3" opacity="0.4"/>
-    </svg>
-  </div>
-
-  <!-- Layer 4: Mountains
-       NOTE: Replace src with PSD-extracted mountains layer -->
-  <div class="layer layer-mountains" aria-hidden="true" data-parallax-factor="0.06">
-    <img src="images/layer-mountains.png"
+  <!-- Layer 3: Sun + Volcanes + Fuego -->
+  <div class="layer layer-sun" aria-hidden="true">
+    <img class="sun-volcanes"
+         src="/images/VALD_2026-volcanes-sol-fuego.png"
          alt=""
          loading="eager"
          decoding="async"
-         width="1200" height="400"
-         onerror="this.style.display='none'">
+         width="1200" height="800">
+  </div>
   </div>
 
-  <!-- Layer 5: Subtitle -->
-  <div class="layer layer-subtitle" aria-hidden="true">
-    <div class="subtitle-text">
-      <span class="blue">El Rey de</span><br>
-      <span class="red">la Montaña</span>
+  <div class="hero-content">
+    <div class="content-subtitle" aria-hidden="true">
+      <img class="subtitle-logo"
+           src="/rey-de-la-montana.svg"
+           alt="El Rey de la Montaña"
+           loading="eager"
+           decoding="async"
+           width="600" height="225">
+    </div>
+
+    <div class="content-vald" aria-hidden="true" data-parallax-factor="0.12">
+      <img src="images/VALD_2026-letras.png"
+           alt=""
+           loading="eager"
+           decoding="async"
+           width="800" height="300"
+           onerror="this.style.display='none'">
+    </div>
+
+    <div class="content-cyclist" aria-hidden="true" data-parallax-factor="0.18">
+      <img src="/images/VALD_2026-ciclista.png"
+           alt=""
+           loading="eager"
+           decoding="async"
+           width="800" height="660">
     </div>
   </div>
 
-  <!-- Layer 6: VALD Lettering
-       NOTE: Replace src with PSD-extracted VALD lettering -->
-  <div class="layer layer-vald" aria-hidden="true" data-parallax-factor="0.05">
-    <img src="images/layer-vald-lettering.png"
+  <div class="layer-temple" aria-hidden="true">
+    <img src="images/VALD-2026-trip.png"
          alt=""
          loading="eager"
-         decoding="async"
-         width="800" height="300"
-         onerror="this.style.display='none'">
-  </div>
-
-  <!-- Layer 7: Cyclist
-       NOTE: Replace src with PSD-extracted cyclist -->
-  <div class="layer layer-cyclist" aria-hidden="true" data-parallax-factor="0.08">
-    <img src="images/layer-cyclist.png"
-         alt=""
-         loading="eager"
-         decoding="async"
-         width="500" height="500"
-         onerror="this.style.display='none'">
-  </div>
-
-  <!-- Layer 8: Flames
-       NOTE: Replace src with PSD-extracted flames -->
-  <div class="layer layer-flames" aria-hidden="true" data-parallax-factor="0.04">
-    <img src="images/layer-flames.png"
-         alt=""
-         loading="eager"
-         decoding="async"
-         width="1100" height="600"
-         onerror="this.style.display='none'">
-  </div>
-
-  <!-- Layer 9: Clouds / Smoke
-       NOTE: Replace srcs with PSD-extracted cloud layers -->
-  <div class="layer layer-clouds" aria-hidden="true">
-    <img class="cloud-left"
-         src="images/layer-cloud.png"
-         alt=""
-         loading="lazy"
-         decoding="async"
-         width="600" height="200"
-         onerror="this.style.display='none'">
-    <img class="cloud-right"
-         src="images/layer-cloud.png"
-         alt=""
-         loading="lazy"
-         decoding="async"
-         width="600" height="200"
-         onerror="this.style.display='none'">
-  </div>
-
-  <!-- Layer 10: Landscape (trees, red paths)
-       NOTE: Replace src with PSD-extracted landscape -->
-  <div class="layer layer-landscape" aria-hidden="true" data-parallax-factor="0.05">
-    <img src="images/layer-landscape.png"
-         alt=""
-         loading="lazy"
-         decoding="async"
-         width="1100" height="500"
-         onerror="this.style.display='none'">
-  </div>
-
-  <!-- Layer 11: Temple / Ceremonial
-       NOTE: Replace src with PSD-extracted temple -->
-  <div class="layer layer-temple" aria-hidden="true" data-parallax-factor="0.03">
-    <img src="images/layer-temple.png"
-         alt=""
-         loading="lazy"
          decoding="async"
          width="300" height="400"
          onerror="this.style.display='none'">
   </div>
+</section>
 
-  <!-- ========================================
-       CONTENT OVERLAY — Countdown + Info
-       ======================================== -->
-  <div class="content-overlay">
-    <div class="countdown-wrap" id="countdown-section">
+<!-- ========================================
+     INFO SECTION — Countdown + Details
+     ======================================== -->
+<section class="info-section" id="countdown-section">
+  <div class="info-inner">
+    <div class="countdown-wrap">
       <p class="countdown-heading">Nos vemos en</p>
 
       <!-- Countdown Timer -->
@@ -339,6 +307,19 @@
       </div>
     </div>
 
+    <!-- CTA Registration -->
+    <div class="cta-row">
+      <a class="cta-button" href="https://forms.gle/qykWkiKZrvt7sbbJ7" target="_blank" rel="noopener" aria-label="Inscríbete a VALD 2026">
+        <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <line x1="19" y1="8" x2="19" y2="14"/>
+          <line x1="22" y1="11" x2="16" y2="11"/>
+        </svg>
+        Inscríbete ahora
+      </a>
+    </div>
+
     <!-- Social / Contact -->
     <div class="social-links">
       <a href="https://www.instagram.com/el.rey.de.la.montana" target="_blank" rel="noopener" aria-label="Seguir en Instagram a El Rey de la Montaña">
@@ -350,16 +331,16 @@
         WhatsApp
       </a>
     </div>
-  </div>
 
-  <!-- VALD Logo — bottom right -->
-  <img class="vald-logo-corner"
-       src="images/VALD.png"
-       alt="Logo VALD"
-       width="120" height="80"
-       loading="eager"
-       decoding="async">
-</main>
+    <!-- VALD Logo -->
+    <img class="vald-logo-inline"
+         src="images/VALD_2026-logo.png"
+         alt="Logo VALD"
+         width="120" height="80"
+         loading="eager"
+         decoding="async">
+  </div>
+</section>
 
 <footer>
   <a href="/ediciones/" class="footer-editions-link" aria-label="Ver ediciones anteriores">📁 Ediciones anteriores</a>
@@ -369,14 +350,13 @@
 <script>
 /* ============================================
    VALD 2026 — Coming Soon JS
+   Anime.js v4 powered animations
    ============================================ */
 
+var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 /* --- Event Configuration --- */
-var EVENT_DATE = new Date('2026-06-06T00:00:00-06:00'); // CST (America/Mexico_City is UTC-6 standard, UTC-5 DST)
-// June 6 is during CDT (Central Daylight Time) so offset is UTC-5
-// However, Mexico abolished DST in 2022 for most of the country (except border zones)
-// Mexico City remains UTC-6 year-round since Nov 2022
-// So 2026-06-06T00:00:00-06:00 is correct for America/Mexico_City
+var EVENT_DATE = new Date('2026-06-06T00:00:00-06:00');
 
 /* --- Countdown --- */
 var cdDays    = document.getElementById('cd-days');
@@ -385,62 +365,175 @@ var cdMinutes = document.getElementById('cd-minutes');
 var cdSeconds = document.getElementById('cd-seconds');
 var cdTimer   = document.getElementById('countdown-timer');
 var cdEnded   = document.getElementById('countdown-ended');
-
-// Track previous values for digit animation
 var prevValues = { d: '', h: '', m: '', s: '' };
 
 function updateCountdown() {
-  var now = Date.now();
-  var diff = EVENT_DATE.getTime() - now;
+  var diff = EVENT_DATE.getTime() - Date.now();
 
   if (diff <= 0) {
-    // Event has started or passed
     cdTimer.style.display = 'none';
     cdEnded.style.display = 'block';
     clearInterval(countdownInterval);
     return;
   }
 
-  var days    = Math.floor(diff / 86400000);
-  var hours   = Math.floor((diff % 86400000) / 3600000);
-  var minutes = Math.floor((diff % 3600000) / 60000);
-  var seconds = Math.floor((diff % 60000) / 1000);
+  var dStr = Math.floor(diff / 86400000).toString();
+  var hStr = Math.floor((diff % 86400000) / 3600000).toString().padStart(2, '0');
+  var mStr = Math.floor((diff % 3600000) / 60000).toString().padStart(2, '0');
+  var sStr = Math.floor((diff % 60000) / 1000).toString().padStart(2, '0');
 
-  var dStr = days.toString();
-  var hStr = hours.toString().padStart(2, '0');
-  var mStr = minutes.toString().padStart(2, '0');
-  var sStr = seconds.toString().padStart(2, '0');
-
-  // Animate changed digits
-  if (dStr !== prevValues.d) { setDigit(cdDays, dStr); prevValues.d = dStr; }
-  if (hStr !== prevValues.h) { setDigit(cdHours, hStr); prevValues.h = hStr; }
-  if (mStr !== prevValues.m) { setDigit(cdMinutes, mStr); prevValues.m = mStr; }
-  if (sStr !== prevValues.s) { setDigit(cdSeconds, sStr); prevValues.s = sStr; }
+  if (dStr !== prevValues.d) { animateDigit(cdDays, dStr); prevValues.d = dStr; }
+  if (hStr !== prevValues.h) { animateDigit(cdHours, hStr); prevValues.h = hStr; }
+  if (mStr !== prevValues.m) { animateDigit(cdMinutes, mStr); prevValues.m = mStr; }
+  if (sStr !== prevValues.s) { animateDigit(cdSeconds, sStr); prevValues.s = sStr; }
 }
 
-function setDigit(el, val) {
+function animateDigit(el, val) {
   el.textContent = val;
-  // Trigger tick animation if motion is OK
-  if (!prefersReducedMotion) {
-    el.classList.remove('digit-tick');
-    // Force reflow to restart animation
-    void el.offsetWidth;
-    el.classList.add('digit-tick');
+  if (!prefersReducedMotion && typeof anime !== 'undefined') {
+    anime({
+      targets: el,
+      translateY: [{ value: -6, duration: 150 }, { value: 0, duration: 250 }],
+      opacity: [{ value: 0.5, duration: 150 }, { value: 1, duration: 250 }],
+      easing: 'easeOutCubic'
+    });
   }
 }
 
-var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-// Start countdown immediately
 updateCountdown();
 var countdownInterval = setInterval(updateCountdown, 1000);
 
-/* --- Parallax Engine --- */
+/* --- Wait for anime.js to load, then initialize --- */
+function initAnimations() {
+  if (typeof anime === 'undefined') {
+    setTimeout(initAnimations, 100);
+    return;
+  }
+
+  if (prefersReducedMotion) return;
+
+  /* Hero entrance timeline */
+  var heroTimeline = anime.timeline({
+    easing: 'easeOutCubic',
+    autoplay: true
+  });
+
+  heroTimeline
+    .add({ targets: '.layer-sunrays', opacity: [0.3, 1], duration: 1500 }, 0)
+    .add({ targets: '.layer-sun', opacity: [0.3, 1], scale: [0.92, 1], duration: 1200 }, 200)
+    .add({ targets: '.content-vald', opacity: [0.3, 1], scale: [0.9, 1], duration: 800 }, 600)
+    .add({ targets: '.content-subtitle', opacity: [0.3, 1], translateY: [20, 0], duration: 800 }, 400)
+    .add({ targets: '.content-cyclist', opacity: [0.3, 1], translateY: [25, 0], duration: 800 }, 800)
+    .add({ targets: '.layer-temple', opacity: [0.3, 1], translateY: [15, 0], duration: 1000 }, 900)
+    .add({ targets: '.flame', opacity: [0.2, 0.7], duration: 1500, delay: anime.stagger(200, { start: 300 }) }, 300)
+    .add({ targets: '.scroll-indicator', opacity: [0, 0.7], translateY: [-10, 0], duration: 800 }, 1800);
+
+  /* Sun rays rotation handled by CSS @keyframes — anime.js not needed */
+
+  /* Sun glow pulse */
+  anime({
+    targets: '.sun-volcanes',
+    filter: [
+      'drop-shadow(0 0 40px rgba(255, 215, 0, 0.3))',
+      'drop-shadow(0 0 60px rgba(255, 215, 0, 0.55))'
+    ],
+    duration: 2000,
+    direction: 'alternate',
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+
+  /* Cyclist float */
+  anime({
+    targets: '.content-cyclist img',
+    translateY: [-6, 6],
+    duration: 3000,
+    direction: 'alternate',
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+
+  /* Flames — flicker animation for each corner */
+  var flames = document.querySelectorAll('.flame');
+  var flameDelays = [0, 600, 1200, 1800, 300];
+  for (var i = 0; i < flames.length; i++) {
+    (function(flame, delay) {
+      anime({
+        targets: flame,
+        opacity: [
+          { value: 0.85, duration: 750 },
+          { value: 0.95, duration: 500 },
+          { value: 0.75, duration: 750 },
+          { value: 0.9, duration: 500 }
+        ],
+        scale: [
+          { value: 1, duration: 750 },
+          { value: 1.02, duration: 500 },
+          { value: 0.98, duration: 750 },
+          { value: 1, duration: 500 }
+        ],
+        loop: true,
+        easing: 'easeInOutSine',
+        delay: delay
+      });
+    })(flames[i], flameDelays[i] || 0);
+  }
+
+  /* Scroll indicator bounce */
+  anime({
+    targets: '.scroll-indicator',
+    translateY: [0, 8, 0],
+    duration: 1500,
+    loop: true,
+    easing: 'easeInOutQuad'
+  });
+
+  /* Info section — entrance on scroll */
+  var infoSection = document.querySelector('.info-section');
+  if (infoSection) {
+    var infoObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          anime({
+            targets: '.countdown-wrap',
+            translateY: [40, 0],
+            duration: 900,
+            easing: 'easeOutCubic'
+          });
+          anime({
+            targets: '.social-links',
+            translateY: [30, 0],
+            duration: 700,
+            delay: 300,
+            easing: 'easeOutCubic'
+          });
+          anime({
+            targets: '.vald-logo-inline',
+            scale: [0.9, 1],
+            duration: 600,
+            delay: 500,
+            easing: 'easeOutCubic'
+          });
+          infoObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    infoObserver.observe(infoSection);
+  }
+
+  /* Info section elements start hidden for anime.js entrance */
+  var infoInner = document.querySelector('.info-inner');
+  if (infoInner) {
+    infoInner.style.visibility = 'visible';
+  }
+}
+
+initAnimations();
+
+/* --- Parallax Engine (scroll only, improved with anime.js easing) --- */
 if (!prefersReducedMotion) {
   var parallaxLayers = document.querySelectorAll('[data-parallax-factor]');
-
   if (parallaxLayers.length > 0) {
-    // Scroll Parallax
     var scrollTicking = false;
     window.addEventListener('scroll', function() {
       if (!scrollTicking) {
@@ -456,7 +549,6 @@ if (!prefersReducedMotion) {
       }
     }, { passive: true });
 
-    // Mouse Parallax (desktop with hover support)
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
       var mouseTicking = false;
       document.addEventListener('mousemove', function(e) {
@@ -464,9 +556,8 @@ if (!prefersReducedMotion) {
           requestAnimationFrame(function() {
             var centerX = window.innerWidth / 2;
             var centerY = window.innerHeight / 2;
-            var deltaX = (e.clientX - centerX) / centerX; // -1 to 1
-            var deltaY = (e.clientY - centerY) / centerY; // -1 to 1
-
+            var deltaX = (e.clientX - centerX) / centerX;
+            var deltaY = (e.clientY - centerY) / centerY;
             for (var i = 0; i < parallaxLayers.length; i++) {
               var factor = parseFloat(parallaxLayers[i].dataset.parallaxFactor) || 0;
               var moveX = deltaX * factor * 30;
@@ -487,14 +578,11 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js')
       .then(function(reg) {
-        // Clean cache periodically
         setInterval(function() {
           if (reg.active) reg.active.postMessage({ type: 'CLEAN_CACHE' });
         }, 300000);
       })
-      .catch(function(err) {
-        // SW registration failed silently
-      });
+      .catch(function() {});
   });
 }
 </script>
